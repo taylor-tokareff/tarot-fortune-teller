@@ -11,3 +11,4 @@ export function getUser() {
     const user = JSON.parse(getUserData);
     return user;
 }
+
