@@ -5,6 +5,8 @@ export const tarot = [
 
         'id': 0,
 
+        'img': '../images/main-deck/0-the-fool.jpg',
+
         'past': "The Fool in the past position indicates that the risks you’ve taken in life to date have set things in motion to soon reward you with great success. By trusting your judgement and following your own path, you’ve set the stage for unlimited potential.",
 
         'present': "In the present position, the Fool indicates that you’re entering a new phase in your life. While this phase could either be positive or negative at the moment, its true influence will be far more apparent to you in the future. Weighing all of your options and assessing risk is paramount to your taking the right decisions.",
@@ -16,6 +18,8 @@ export const tarot = [
         'name': 'magician',
 
         'id': 1,
+
+        'img': '../images/main-deck/1-the-magician.jpg',
 
         'past': "Even though you have what it takes to grow spiritually, you did not do anything about it in the past.",
 
@@ -29,6 +33,8 @@ export const tarot = [
 
         'id': 2,
 
+        'img': '../images/main-deck/2-the-high-preistess.jpg',
+
         'past': "In the past position, the High Priestess is a testament to the patience and understanding you have shown in difficult circumstances. Instinct and intuition have been guiding forces throughout your life, more often than otherwise leading you in the right direction.",
 
         'present': "When the High Priestess is in the present position, you’re advised to never believe what’s presented as the truth. The skills you developed in the past will apply here, making it easier for you to avoid bad a situation. Is your partner insisting on you moving in together, despite your objections? Do you sense that someone walking down the street is following you too closely? Follow these hunches — you’ll be grateful that you did.",
@@ -40,6 +46,8 @@ export const tarot = [
         'name': 'empress',
 
         'id': 3,
+
+        'img': '../images/main-deck/3-the-empress.jpg',
 
         'past': "In the past position, the Empress indicates that several opportunities you seized upon in the past are starting to come to fruition. These might have been romantic, business, artistic, or personal opportunities, but so long as you continue along the same path you’ve been following all this time, you can be confident even greater successes will be forthcoming.",
 
@@ -53,6 +61,8 @@ export const tarot = [
 
         'id': 4,
 
+        'img': '../images/main-deck/4-the-emperor.jpg',
+
         'past': "In the past position, the Emperor indicates that you’ve benefited greatly from the nurturing your father or an important male teacher provided you as a child. You continue to be guided by the lessons and values this individual wisely imparted to you.",
 
         'present': "In the present position, it means that there’s a good chance you’re about to be introduced to a celebrity or famous person who was one of your childhood heroes. At the same time, there is an individual in your life who is introducing you to a new way of being, a more positive approach that this person, likely an older, powerful male, personifies.",
@@ -64,6 +74,8 @@ export const tarot = [
         'name': 'hierophant',
 
         'id': 5,
+
+        'img': '../images/main-deck/5-the-hierophant.jpg',
 
         'past': "In the past position, the Hierophant indicates that you’ve benefited more than you realize from your past ambitions, whether they were realized at the time or not. Determine where this strength within you lies, and apply it to your benefit under your present circumstances.",
 
@@ -77,6 +89,8 @@ export const tarot = [
 
         'id': 6,
 
+        'img': '../images/main-deck/6-the-lovers.jpg',
+
         'past': "Finding the Lovers in the past position indicates that a romantic relationship is the foundation of your identity. If you have been with the same person for a long time, it represents the stability of your relationship. If you are in a newer relationship, it may indicate that your feelings for a former love are still governing your choices.",
 
         'present': "In the present position, the Lovers card means that a relationship is developing and will bring passion and happiness. It can also indicate that a period of loneliness is about to come to an end, possibly with a new love or with personal growth and acceptance. In either case, the situation will be a transformative one.",
@@ -88,6 +102,8 @@ export const tarot = [
         'name': 'chariot',
 
         'id': 7,
+
+        'img': '../images/main-deck/7-the-chariot.jpg',
 
         'past': "When in the past position, the Chariot represents a vanquished obstacle that has led you to your current success. Your hard work and dedication paid off, be that in the form of money, a diploma, or a completed art project.",
 
@@ -101,6 +117,8 @@ export const tarot = [
 
         'id': 8,
 
+        'img': '../images/main-deck/8-strength.jpg',
+
         'past': "The past position for Strength is a particularly interesting state. This often refers to your composure in the face of adversity leading to your current success. In some cases, Strength in the past position refers to your ability to consistently seek new challenges, never settling into a single position for too long. Essentially, Strength in the past signifies nt transition and victory through your iron will to hold it all together.",
 
         'present': "In the present position, the Strength card is a challenge to take on more. Do not turn down opportunities simply because they are risky or difficult. The odds are in your favor, and now is the time invest yourself in uncertain ventures that you are passionate about.",
@@ -112,6 +130,8 @@ export const tarot = [
         'name': 'hermit',
 
         'id': 9,
+
+        'img': '../images/main-deck/9-the-hermit.jpg',
 
         'past': "In the past position, the Hermit indicates that you are coming out of a period of isolation. Often this card shows up after earning a degree or being single for a long time.",
 
@@ -125,6 +145,8 @@ export const tarot = [
 
         'id': 10,
 
+        'img': '../images/main-deck/10-wheel-of-fortune.jpg',
+
         'past': "The Wheel of Fortune in the past position indicates that the numerous challenges you have overcome have made you who you are today. Your resilience has allowed you to come closer to achieving your life goals.",
 
         'present': "In the present position, the Wheel of Fortune means that chance is on your side. Good things are coming your way, although they may first appear as obstacles. Don’t wait too long or the opportunity will pass you by.",
@@ -136,6 +158,8 @@ export const tarot = [
         'name': 'justice',
 
         'id': 11,
+
+        'img': '../images/main-deck/11-justice.jpg',
 
         'past': "In the past position, Justice indicates that you are now feeling the consequences of a major decision you once made. These consequences made be good or bad, but your decision was made under a haze of confusion. Try to approach future choices with a clearer head.",
 
@@ -149,6 +173,8 @@ export const tarot = [
 
         'id': 12,
 
+        'img': '../images/main-deck/12-the-hanged-man.jpg',
+
         'past': "Drawing the Hanged Man in the present position suggests you are unhappy with your current situation, and that you feel trapped in your immediate circumstances or frame of mind. The good news is that you have the power within to escape your unhappy situation. You just need to step back a little, relax, stop trying to control everything all the time and do your best to look at your dilemma from a different perspective. The way forward will make itself apparent in due time.",
 
         'present': "In the past position, the Hanged Man card indicates that you’ve finally managed to let go of the lingering negative memories you’ve been harboring all these years, and that this has proven beneficial to you spiritually. You can now safely look back at these experiences from a fresh perspective.",
@@ -160,6 +186,8 @@ export const tarot = [
         'name': 'death',
 
         'id': 13,
+
+        'img': '../images/main-deck/13-death.jpg',
 
         'past': "Death in the past position indicates you have moved into a new phase of life, that you are at the end of one cycle and arrived at a time of new beginnings.",
 
@@ -173,6 +201,8 @@ export const tarot = [
 
         'id': 14,
 
+        'img': '../images/main-deck/14-temperance.jpg',
+
         'past': "In the past position, Temperance indicates that your ability to work harmoniously with others while balancing the material and spiritual elements in your life has had a profound affect on your life to date. This will be ongoing.",
 
         'present': "In the present position, Temperance means that something you’ve long yearned for — be it wealth, romance, a new car or something entirely different — is about to come to fruition.",
@@ -184,6 +214,8 @@ export const tarot = [
         'name': 'devil',
 
         'id': 15,
+
+        'img': '../images/main-deck/15-the-devil.jpg',
 
         'past': "In the past position, the Devil indicates that bad choices you made are slowing the progress you’ve been making in your life journey.",
 
@@ -197,6 +229,8 @@ export const tarot = [
 
         'id': 16,
 
+        'img': '../images/main-deck/16-the-tower.jpg',
+
         'past': "In the past position, the Tower indicates that you have experienced a traumatic event which continues to negatively affect you. It could be in the recent or distant past — either way, you must learn to move forward and leave it behind you, where it belongs.",
 
         'present': "In the present position, it represents a longstanding conflict that’s about to come to its conclusion. It could be of a romantic nature, and if so, you need to step back and reevaluate the relationship in order to proceed in the right direction.",
@@ -208,6 +242,8 @@ export const tarot = [
         'name': 'star',
 
         'id': 17,
+
+        'img': '../images/main-deck/17-the-star.jpg',
 
         'past': "In the past position, the Star card represents a very optimistic choice you made some time ago. Your current situation is the result of this unbridled optimism. Perhaps you quit your job to pursue your artistic endeavors, and are now living comfortably off of your passion. Conversely, leaving your comfortable job may have resulted in financial ruin. Either way, the Star in the past position is a sign that you need to move forward and challenge yourself anew.",
 
@@ -221,6 +257,8 @@ export const tarot = [
 
         'id': 18,
 
+        'img': '../images/main-deck/18-the-moon.jpg',
+
         'past': "In the past position, the Moon indicates that you do not clearly understand the forces that have been at work in your life up until this point. Take a step back and reanalyze your past successes and defeats. Perhaps you had more of a helping hand from those around you than you realize. Self-aggrandizing stories of past accomplishments may in fact be doing you more harm than good.",
 
         'present': "The Moon is a clear sign of change. You are or will be uncertain about how to proceed, but this situation will be less foreign to you than it may seem. Look to the past for guidance — you already have the experience you need to overcome this challenge if you are able to recognize it for what it is.",
@@ -232,6 +270,8 @@ export const tarot = [
         'name': 'sun',
 
         'id': 19,
+
+        'img': '../images/main-deck/19-the-sun.jpg',
 
         'past': "The Sun is a welcome card in any position. In the past position, it indicates that you likely had a sunny, positive upbringing. Look back on your childhood and show appreciation for the people you no longer spend time with. You may feel the desire to contact those you miss, or those who helped make your childhood so memorable.",
 
@@ -245,7 +285,7 @@ export const tarot = [
 
         'id': 20,
 
-        'img': './images/main-deck/20-judgement.jpg',
+        'img': '../images/main-deck/20-judgement.jpg',
 
         'past': "In a past position, Judgement indicates that your current life is the end result of a single major decision that you made in the past. Day to day living obliges all of us to make decisions both large and small, but you made one decision that left an indelible mark on your life, for better or worse. Perhaps you chose to move away from home in college or drop out of school. Maybe you got caught stealing, or found the love of your life on a blind date. It can be hard to think of your life unfolding any other way than it has, but if you had made this one choice differently, your own life would be unrecognizable to you.",
 
@@ -258,6 +298,8 @@ export const tarot = [
         'name': 'world',
 
         'id': 21,
+
+        'img': '../images/main-deck/21-the-world.jpg',
 
         'past': "In the past position, the World indicates that your path will lead you full circle but grant you a deeper understanding of your situation. Perhaps you will move to a faraway city only to move back home thereafter, or leave your job for a new opportunity and return in the long run. This shouldn’t be seen as a bad sign — your return will be wholly voluntary and triumphant.",
 
