@@ -20,3 +20,4 @@ userInfoForm.addEventListener('submit', (event) => {
     window.location = './fortune-page/index.html';
 
 });
+
