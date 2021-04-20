@@ -3,8 +3,7 @@ import { tarot } from '../data/card-meanings.js'
 import { getUser } from '../utils.js'
 
 const shuffledDeck = shuffle(tarot);
-const test = nineCards(shuffledDeck);
-console.log(test);
+
 
 
 // newArray = [];
@@ -39,8 +38,10 @@ export function shuffle(array) {
 }
 
 export function nineCards(shuffledDeck) {
-  const user = getUser()
+  const user = getUser();
   const userChoices = user.chosenCards.length;
+
+  console.log(user.chosenCards);
 
   if (userChoices === 0) {
 
@@ -58,5 +59,44 @@ export function nineCards(shuffledDeck) {
   }
 
 };
+
+function createCard() {
+  const radio1 = document.querySelector ('#tarot1');
+  const radio2 = document.querySelector ('#tarot2');
+  const radio3 = document.querySelector ('#tarot3');
+
+  const label1 = document.querySelector ('#first-card-label');
+  const label2 = document.querySelector ('#second-card-label');
+  const label3 = document.querySelector ('#third-card-label');
+
+const threeCards = nineCards(shuffledDeck);
+
+const cardImg1 = document.querySelector('#card1');
+
+
+cardImg1.src = '../images/main-deck/card-back.png';
+label1.append(cardImg1,radio1);
+
+radio1.value = threeCards[0].name
+
+const cardImg2 = document.querySelector('#card2');
+
+cardImg2.src = '../images/main-deck/card-back.png';
+label2.append(cardImg2,radio2);
+
+radio2.value = threeCards[1].name
+
+
+const cardImg3 = document.querySelector('#card3');
+cardImg3.src = '../images/main-deck/card-back.png'
+label3.append(cardImg3,radio3);
+
+radio3.value = threeCards[2].name
+
+}
+
+createCard();
+
+
 
 
