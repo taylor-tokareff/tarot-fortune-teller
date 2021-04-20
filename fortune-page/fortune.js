@@ -5,21 +5,6 @@ import { getUser, findByName, saveUser } from '../utils.js'
 const shuffledDeck = shuffle(tarot);
 const pickCardButton = document.querySelector('#pick-card-button');
 
-
-// newArray = [];
-
-// function chooseRandomCards(cards) {
-
-// choose 3 random cards
-/*  num = Math.floor(Math.random() * tarot.length);
- for (let i = 9; i > 0; i--) {
-     num = Math.floor(Math.random() * tarot.length);
- } */
-// choose another 3 random cards (no repeats)
-// choose another 3 random cards (no repeats)
-//}
-
-
 export function shuffle(array) {
   // i is the card we are swapping with the randomly chosen card
   let i = 0;
@@ -58,43 +43,47 @@ export function nineCards(shuffledDeck) {
     return [shuffledDeck[6], shuffledDeck[7], shuffledDeck[8]];
   }
 
+  else if (userChoices === 3) {
+    window.location = '../results-page/index.html'
+  }
+
 };
 
 function createCard() {
-  const radio1 = document.querySelector ('#tarot1');
-  const radio2 = document.querySelector ('#tarot2');
-  const radio3 = document.querySelector ('#tarot3');
+  const radio1 = document.querySelector('#tarot1');
+  const radio2 = document.querySelector('#tarot2');
+  const radio3 = document.querySelector('#tarot3');
 
-  const label1 = document.querySelector ('#first-card-label');
-  const label2 = document.querySelector ('#second-card-label');
-  const label3 = document.querySelector ('#third-card-label');
+  const label1 = document.querySelector('#first-card-label');
+  const label2 = document.querySelector('#second-card-label');
+  const label3 = document.querySelector('#third-card-label');
 
-const threeCards = nineCards(shuffledDeck);
+  const threeCards = nineCards(shuffledDeck);
 
-const cardImg1 = document.querySelector('#card1');
-
-
-cardImg1.src = '../images/main-deck/card-back.png';
-label1.append(cardImg1,radio1);
-
-radio1.value = threeCards[0].name;
-console.log(radio1.value);
-
-const cardImg2 = document.querySelector('#card2');
-
-cardImg2.src = '../images/main-deck/card-back.png';
-label2.append(cardImg2,radio2);
-
-radio2.value = threeCards[1].name;
-console.log(radio2.value);
+  const cardImg1 = document.querySelector('#card1');
 
 
-const cardImg3 = document.querySelector('#card3');
-cardImg3.src = '../images/main-deck/card-back.png'
-label3.append(cardImg3,radio3);
+  cardImg1.src = '../images/main-deck/card-back.png';
+  label1.append(cardImg1, radio1);
 
-radio3.value = threeCards[2].name;
-console.log(radio3.value);
+  radio1.value = threeCards[0].name;
+  console.log(radio1.value);
+
+  const cardImg2 = document.querySelector('#card2');
+
+  cardImg2.src = '../images/main-deck/card-back.png';
+  label2.append(cardImg2, radio2);
+
+  radio2.value = threeCards[1].name;
+  console.log(radio2.value);
+
+
+  const cardImg3 = document.querySelector('#card3');
+  cardImg3.src = '../images/main-deck/card-back.png'
+  label3.append(cardImg3, radio3);
+
+  radio3.value = threeCards[2].name;
+  console.log(radio3.value);
 
 }
 
@@ -107,4 +96,6 @@ pickCardButton.addEventListener('click', () => {
   saveUser(user);
 
   // reset cards
+  nineCards(shuffledDeck);
+  createCard();
 });
