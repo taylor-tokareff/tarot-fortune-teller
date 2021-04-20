@@ -43,6 +43,10 @@ export function nineCards(shuffledDeck) {
     return [shuffledDeck[6], shuffledDeck[7], shuffledDeck[8]];
   }
 
+  else if (userChoices === 3) {
+    window.location = '../results-page/index.html'
+  }
+
 };
 
 function createCard() {
