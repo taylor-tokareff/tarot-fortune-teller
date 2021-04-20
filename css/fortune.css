@@ -10,8 +10,8 @@ html, body {
     margin: 0;
 }
 
-cursor {
-    
+input {
+    display: none;
 }
 
 header {
@@ -33,6 +33,15 @@ header {
     cursor: pointer;
 }
 
+input[type='radio']:checked + img {
+    border: 10px solid pink;
+   
+}
+
+/* img:active {
+    border: 10px solid green
+} */
+
 #tarot-choices {
     display: flex;
     width: 100%;
@@ -40,10 +49,7 @@ header {
     justify-content: center;
     align-items: center;
     margin: 40px;
-}
 
-input {
-    display: none;
 }
 
 #button-container {
@@ -51,3 +57,4 @@ input {
     justify-content: center;
     align-items: center;
 }
+

@@ -70,15 +70,15 @@ function createCard() {
   const cardImg1 = document.querySelector('#card1');
 
   cardImg1.src = '../images/main-deck/card-back.png';
-  label1.append(cardImg1, radio1);
+  // label1.append(cardImg1, radio1);
 
   radio1.value = threeCards[0].name;
-  console.log(radio1.value);
+  console.log(radio1.value)
 
   const cardImg2 = document.querySelector('#card2');
 
   cardImg2.src = '../images/main-deck/card-back.png';
-  label2.append(cardImg2, radio2);
+  // label2.append(cardImg2, radio2);
 
   radio2.value = threeCards[1].name;
   console.log(radio2.value);
@@ -86,7 +86,7 @@ function createCard() {
 
   const cardImg3 = document.querySelector('#card3');
   cardImg3.src = '../images/main-deck/card-back.png'
-  label3.append(cardImg3, radio3);
+  // label3.append(cardImg3, radio3);
 
   radio3.value = threeCards[2].name;
   console.log(radio3.value);
