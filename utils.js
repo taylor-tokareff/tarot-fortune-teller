@@ -12,3 +12,10 @@ export function getUser() {
     return user;
 }
 
+export function findByName(array, name) {
+    for (let card of array) {
+        if (card.name === name) {
+            return card;
+        }
+    }
+}
