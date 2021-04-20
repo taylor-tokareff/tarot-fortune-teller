@@ -8,6 +8,7 @@ const user = getUser()
 
 const cardsToInject = user.chosenCards
 
+const resultsParagraph = document.querySelector('#results-paragraph')
 const pastCardTitle = document.querySelector('#past-card-title')
 const presentCardTitle = document.querySelector('#present-card-title')
 const futureCardTitle = document.querySelector('#future-card-title')
@@ -34,4 +35,9 @@ presentLabel.append(presentImageContainer)
 futureLabel.append(futureImageContainer)
 
 
+let results = 'The cards have revealed your fate, '
+
+results += user.name + '. ' + pastCardItem.past + ' ' + presentCardItem.present + ' ' + futureCardItem.future;
+
+resultsParagraph.textContent = results;
 
