@@ -4,6 +4,13 @@ import { getUser, findByName, saveUser } from '../utils.js'
 
 const shuffledDeck = shuffle(tarot);
 const pickCardButton = document.querySelector('#pick-card-button');
+const user = getUser()
+
+const nameHeader = document.querySelector('#name-display')
+const birthdayHeader = document.querySelector('#birthday-display')
+
+nameHeader.textContent = user.name
+birthdayHeader.textContent = user.birthday
 
 export function shuffle(array) {
   // i is the card we are swapping with the randomly chosen card
@@ -61,7 +68,6 @@ function createCard() {
   const threeCards = nineCards(shuffledDeck);
 
   const cardImg1 = document.querySelector('#card1');
-
 
   cardImg1.src = '../images/main-deck/card-back.png';
   label1.append(cardImg1, radio1);

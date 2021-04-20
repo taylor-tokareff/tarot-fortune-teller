@@ -13,6 +13,10 @@ const pastCardTitle = document.querySelector('#past-card-title')
 const presentCardTitle = document.querySelector('#present-card-title')
 const futureCardTitle = document.querySelector('#future-card-title')
 
+const nameHeader = document.querySelector('#name-display')
+const birthdayHeader = document.querySelector('#birthday-display')
+
+
 const pastImageContainer = document.querySelector('#past-card-img')
 const presentImageContainer = document.querySelector('#present-card-img')
 const futureImageContainer = document.querySelector('#future-card-img')
@@ -24,6 +28,9 @@ const futureLabel = document.querySelector('#future-label')
 const pastCardItem = findByName(tarot, user.chosenCards[0])
 const presentCardItem = findByName(tarot, user.chosenCards[1])
 const futureCardItem = findByName(tarot, user.chosenCards[2])
+
+nameHeader.textContent = user.name
+birthdayHeader.textContent = user.birthday
 
 pastImageContainer.src = pastCardItem.img
 presentImageContainer.src = presentCardItem.img
@@ -37,7 +44,7 @@ futureLabel.append(futureImageContainer)
 
 let results = 'The cards have revealed your fate, '
 
-results += user.name + '. ' + pastCardItem.past + ' ' + presentCardItem.present + ' ' + futureCardItem.future;
+results += user.name + ' born ' + user.birthday + '. ' + pastCardItem.past + ' ' + presentCardItem.present + ' ' + futureCardItem.future;
 
 resultsParagraph.textContent = results;
 
