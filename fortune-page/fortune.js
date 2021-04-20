@@ -3,8 +3,7 @@ import { tarot } from '../data/card-meanings.js'
 import { getUser } from '../utils.js'
 
 const shuffledDeck = shuffle(tarot);
-const test = nineCards(shuffledDeck);
-console.log(test);
+
 
 
 // newArray = [];
@@ -58,5 +57,31 @@ export function nineCards(shuffledDeck) {
   }
 
 };
+
+function createCard() {
+  const radio1 = document.querySelector ('#past-card-img');
+  const radio2 = document.querySelector ('#present-card-img');
+  const radio3 = document.querySelector ('#future-card-img');
+
+  const label1 = document.querySelector ('past-label');
+  const label2 = document.querySelector ('present-label');
+  const label3 = document.querySelector ('future-label');
+
+const threeCards = nineCards(shuffledDeck);
+
+const cardImg1 = document.querySelector('past-card-img');
+cardImg1.src = threeCards[0].images/main-deck/card-back.png;
+label1.append(cardImg1);
+radio1.value = threeCards[0].name
+
+const cardImg2 = document.querySelector('present-card-img');
+
+const cardImg3 = document.querySelector('future-card-img');
+
+}
+
+createCard();
+
+
 
 
