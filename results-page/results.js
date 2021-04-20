@@ -8,6 +8,7 @@ const user = getUser()
 
 const cardsToInject = user.chosenCards
 
+const resultsParagraph = document.querySelector('#results-paragraph')
 const pastCardTitle = document.querySelector('#past-card-title')
 const presentCardTitle = document.querySelector('#present-card-title')
 const futureCardTitle = document.querySelector('#future-card-title')
@@ -16,17 +17,27 @@ const pastImageContainer = document.querySelector('#past-card-img')
 const presentImageContainer = document.querySelector('#present-card-img')
 const futureImageContainer = document.querySelector('#future-card-img')
 
+const pastLabel = document.querySelector('#past-label')
+const presentLabel = document.querySelector('#present-label')
+const futureLabel = document.querySelector('#future-label')
+
 const pastCardItem = findByName(tarot, user.chosenCards[0])
 const presentCardItem = findByName(tarot, user.chosenCards[1])
 const futureCardItem = findByName(tarot, user.chosenCards[2])
 
-const pastCardImage = pastCardItem.img
-const presentCardImage = presentCardItem.img
-const futureCardImage = futureCardItem.img
+pastImageContainer.src = pastCardItem.img
+presentImageContainer.src = presentCardItem.img
+futureImageContainer.src = futureCardItem.img
 
-pastImageContainer.append(pastCardImage)
 
-pastCardTitle.textContent = user.chosenCards[0]
-presentCardTitle.textContent = user.chosenCards[1]
-futureCardTitle.textContent = user.chosenCards[2]
+pastLabel.append(pastImageContainer)
+presentLabel.append(presentImageContainer)
+futureLabel.append(futureImageContainer)
+
+
+let results = 'The cards have revealed your fate, '
+
+results += user.name + '. ' + pastCardItem.past + ' ' + presentCardItem.present + ' ' + futureCardItem.future;
+
+resultsParagraph.textContent = results;
 
