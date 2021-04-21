@@ -119,7 +119,7 @@ export const tarot = [
 
         'img': '../images/main-deck/8-strength.jpg',
 
-        'past': "The past position for Strength is a particularly interesting state. This often refers to your composure in the face of adversity leading to your current success. In some cases, Strength in the past position refers to your ability to consistently seek new challenges, never settling into a single position for too long. Essentially, Strength in the past signifies nt transition and victory through your iron will to hold it all together.",
+        'past': "The past position for Strength is a particularly interesting state. This often refers to your composure in the face of adversity leading to your current success. In some cases, Strength in the past position refers to your ability to consistently seek new challenges, never settling into a single position for too long. Essentially, Strength in the past signifies transition and victory through your iron will to hold it all together.",
 
         'present': "In the present position, the Strength card is a challenge to take on more. Do not turn down opportunities simply because they are risky or difficult. The odds are in your favor, and now is the time invest yourself in uncertain ventures that you are passionate about.",
 

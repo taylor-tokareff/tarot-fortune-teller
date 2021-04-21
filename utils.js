@@ -1,5 +1,4 @@
 
-
 export function saveUser(user) {
     const saveUserData = JSON.stringify(user);
     localStorage.setItem('user', saveUserData);
@@ -19,3 +18,4 @@ export function findByName(array, name) {
         }
     }
 }
+
