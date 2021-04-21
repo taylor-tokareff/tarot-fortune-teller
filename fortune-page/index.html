@@ -28,25 +28,46 @@
         <div id="fortune-teller">
             <img src="../images/projects-fortuneteller.png" alt="" id="">
         </div>
+
         <div id="tarot-choices">
-            <label id='first-card-label' class="card-display">
-                <input type="radio" name="cards" id="tarot1" checked />
-                <img src="" id='card1' alt="" class="card-size" />
-            </label>
-            <label id="second-card-label" class="card-display">
-                <input type="radio" name="cards" id="tarot2" />
-                <img src="" id='card2' alt="" class="card-size" />
-            </label>
-            <label id="third-card-label" class="card-display">
-                <input type="radio" name="cards" id="tarot3" />
-                <img src="" id='card3' alt="" class="card-size" />
-            </label>
-        </div>
-        <div id="button-container">
-            <button id="pick-card-button" class="btn">Pick A Card</button>
-        </div>
+
+            <div class="flip-container">
+                <div class="inner-flip-container">
+                    <label id='first-card-label' class="card-display front">
+                        <input type="radio" name="cards" id="tarot1" checked />
+                        <img src="" id='card1' alt="" class="card-size" />
+                    </label>
+                    <img src="" id="revealed-card-1" class="revealed-cards back" />
+                </div>
+            </div>
+
+            <div class="flip-container">
+                <div class="inner-flip-container">
+                    <label id="second-card-label" class="card-display front">
+                        <input type="radio" name="cards" id="tarot2" />
+                        <img src="" id='card2' alt="" class="card-size" />
+                    </label>
+                    <img src="" id="revealed-card-2" class="revealed-cards back" />
+                </div>
+            </div>
+
+            <div class="flip-container">
+                <div class="inner-flip-container">
+                    <label id="third-card-label" class="card-display front">
+                        <input type="radio" name="cards" id="tarot3" />
+                        <img src="" id='card3' alt="" class="card-size" />
+                    </label>
+                    <img src="" id="revealed-card-3" class="revealed-cards back" />
+                </div>
+            </div>
+
+
+            <div id="button-container">
+                <button id="pick-card-button" class="btn">Pick A Card</button>
+            </div>
 
     </main>
+
     <footer>
 
     </footer>

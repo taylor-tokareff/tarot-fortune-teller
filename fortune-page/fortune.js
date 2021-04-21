@@ -12,6 +12,21 @@ const birthdayHeader = document.querySelector('#birthday-display')
 nameHeader.textContent = user.name
 birthdayHeader.textContent = user.birthday
 
+let cardToFlipContainer0 = document.querySelectorAll('.flip-container')[0];
+let cardToFlip0 = document.querySelectorAll('.inner-flip-container')[0];
+
+// cardToFlipContainer0.addEventListener('click', () => {
+//     cardToFlip0.classList.toggle('flip');
+// });
+
+let cardToFlipContainer1 = document.querySelectorAll('.flip-container')[1];
+let cardToFlip1 = document.querySelectorAll('.inner-flip-container')[1];
+
+
+let cardToFlipContainer2 = document.querySelectorAll('.flip-container')[2];
+let cardToFlip2 = document.querySelectorAll('.inner-flip-container')[2];
+
+
 export function shuffle(array) {
   // i is the card we are swapping with the randomly chosen card
   let i = 0;
@@ -68,28 +83,36 @@ function createCard() {
   const threeCards = nineCards(shuffledDeck);
 
   const cardImg1 = document.querySelector('#card1');
+  const revealedCard1 = document.querySelector('#revealed-card-1')
 
   cardImg1.src = '../images/main-deck/card-back.png';
-  // label1.append(cardImg1, radio1);
+  revealedCard1.src = threeCards[0].img
+  console.log(threeCards)
+
 
   radio1.value = threeCards[0].name;
-  console.log(radio1.value)
+
 
   const cardImg2 = document.querySelector('#card2');
+  const revealedCard2 = document.querySelector('#revealed-card-2')
 
   cardImg2.src = '../images/main-deck/card-back.png';
-  // label2.append(cardImg2, radio2);
+  revealedCard2.src = threeCards[1].img
+
 
   radio2.value = threeCards[1].name;
-  console.log(radio2.value);
+
 
 
   const cardImg3 = document.querySelector('#card3');
+  const revealedCard3 = document.querySelector('#revealed-card-3')
+
   cardImg3.src = '../images/main-deck/card-back.png'
-  // label3.append(cardImg3, radio3);
+  revealedCard3.src = threeCards[2].img
+
 
   radio3.value = threeCards[2].name;
-  console.log(radio3.value);
+
 
 }
 
@@ -101,7 +124,20 @@ pickCardButton.addEventListener('click', () => {
   user.chosenCards.push(selectedButton.value);
   saveUser(user);
 
-  // reset cards
-  nineCards(shuffledDeck);
-  createCard();
-});
+  const cardToFlip = selectedButton.parentElement.parentElement;
+  // const bob = document.querySelector('.revealed-cards')
+
+  cardToFlip.classList.toggle('flip');
+  // bob.classList.toggle('revealed-cards')
+
+  setTimeout(() => {
+    cardToFlip.classList.toggle('flip');
+  }, 3000);
+
+  setTimeout(() => {
+    nineCards(shuffledDeck);
+    createCard();
+  }, 3600)
+
+
+})
