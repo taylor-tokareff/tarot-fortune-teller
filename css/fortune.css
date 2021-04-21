@@ -9,6 +9,9 @@ html, body {
     padding: 0;
     margin: 0;
     background-image: url('../images/classy background.PNG');
+    background-size: 300px;
+    color: rgb(122, 21, 122);
+    font-family: 'Mystery Quest', cursive;
     
 }
 
@@ -36,7 +39,7 @@ header {
 }
 
 input[type='radio']:checked + img {
-    border: 5px solid yellow;
+    border: 5px solid gold;
    
 }
 
@@ -56,3 +59,57 @@ input[type='radio']:checked + img {
     align-items: center;
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    font-size: 85px;
+    text-shadow: 4px 4px 4px rgb(20, 180, 47);
+}
+
+#display-background {
+    display: flex;
+    background-color: black;
+    border-radius: 25px;
+    color: gold;
+}
+
+#name-display {
+    margin: 10px;
+}
+
+#birthday-display {
+    margin: 10px;
+}
+
+.btn {
+    cursor: pointer;
+    background: #6f0a91;
+    background-image: -webkit-linear-gradient(top, #6f0a91, #9b40c2);
+    background-image: -moz-linear-gradient(top, #6f0a91, #9b40c2);
+    background-image: -ms-linear-gradient(top, #6f0a91, #9b40c2);
+    background-image: -o-linear-gradient(top, #6f0a91, #9b40c2);
+    background-image: linear-gradient(to bottom, #6f0a91, #9b40c2);
+    -webkit-border-radius: 25;
+    -moz-border-radius: 25;
+    border-radius: 25px;
+    font-family: Georgia;
+    color: gold;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #841291;
+    background-image: -webkit-linear-gradient(top, #841291, #a52bb8);
+    background-image: -moz-linear-gradient(top, #841291, #a52bb8);
+    background-image: -ms-linear-gradient(top, #841291, #a52bb8);
+    background-image: -o-linear-gradient(top, #841291, #a52bb8);
+    background-image: linear-gradient(to bottom, #841291, #a52bb8); 
+    text-decoration: none;
+  }
+
+  .card-size {
+      height: 500px;
+  }

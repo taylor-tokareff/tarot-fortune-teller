@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/fortune.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap" rel="stylesheet">
     <title>Tarot Time</title>
 </head>
 
@@ -15,9 +17,10 @@
             Your fortune awaits...
         </h1>
 
-        <div id="name-display"></div>
-        <div id="birthday-display"></div>
-
+        <div id="display-background">
+            <div id="name-display"></div>
+            <div id="birthday-display"></div>
+        </div>
 
         </div>
     </header>
@@ -28,19 +31,19 @@
         <div id="tarot-choices">
             <label id='first-card-label' class="card-display">
                 <input type="radio" name="cards" id="tarot1" checked />
-                <img src="" id='card1' alt="" />
+                <img src="" id='card1' alt="" class="card-size" />
             </label>
             <label id="second-card-label" class="card-display">
                 <input type="radio" name="cards" id="tarot2" />
-                <img src="" id='card2' alt="" />
+                <img src="" id='card2' alt="" class="card-size" />
             </label>
             <label id="third-card-label" class="card-display">
                 <input type="radio" name="cards" id="tarot3" />
-                <img src="" id='card3' alt="" />
+                <img src="" id='card3' alt="" class="card-size" />
             </label>
         </div>
         <div id="button-container">
-            <button id="pick-card-button">Pick A Card</button>
+            <button id="pick-card-button" class="btn">Pick A Card</button>
         </div>
 
     </main>
