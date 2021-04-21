@@ -113,3 +113,39 @@ h1 {
   .card-size {
       height: 500px;
   }
+
+  .flip-container {
+    display: inline-flex;
+    height: 300px;
+    width: 200px;
+    perspective: 1000px;
+    margin: 100px;
+}
+  
+.inner-flip-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+}
+  
+.flip {
+    transform: rotateY(180deg);
+}
+  
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+}
+  
+.back {
+    transform: rotateY(180deg);
+}
+
+/* .revealed-cards {
+    display: none;
+} */
