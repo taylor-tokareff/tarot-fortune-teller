@@ -1,4 +1,4 @@
-import { saveUser } from './utils.js'
+import { getUser, saveUser } from './utils.js'
 
 const userInfoForm = document.querySelector('form')
 
@@ -9,11 +9,16 @@ userInfoForm.addEventListener('submit', (event) => {
     const name = userInput.get('name-input');
     const birthDay = userInput.get('birthday-input');
 
-    const user = {
-        name: name,
-        birthday: birthDay,
-        chosenCards: []
+    let user = getUser();
+    if (!user) {
+        user = {
+            name: name,
+            birthday: birthDay,
+            chosenCards: [],
+            pastReadings: []
+        };
     }
+    
 
     saveUser(user);
 

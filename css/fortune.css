@@ -34,13 +34,9 @@ header {
 }
 
 input[type='radio']:checked + img {
-    border: 10px solid pink;
+    border: 5px solid yellow;
    
 }
-
-/* img:active {
-    border: 10px solid green
-} */
 
 #tarot-choices {
     display: flex;
