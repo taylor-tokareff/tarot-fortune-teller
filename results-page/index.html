@@ -6,41 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarot</title>
-    <link rel="stylesheet" href="../css/styles.css/">
+    <link rel="stylesheet" href="../css/results.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        Results Page
-        <div id="name-display"></div>
-        <div id="birthday-display"></div>
+        <h1>
+            Results Page
+        </h1>
+
+        <div id="display-background">
+            <div id="name-display"></div>
+            <div id="birthday-display"></div>
+        </div>
     </header>
 
     <main>
-        <div>
+        <div id="results-container">
 
             <label id="past-label">
-
                 <h3>Past</h3>
-
-                <img id="past-card-img">
+                <img id="past-card-img" class="card-size">
             </label>
 
             <label id="present-label">
-
                 <h3>Present</h3>
-                <img id="present-card-img">
+                <img id="present-card-img" class="card-size">
             </label>
 
             <label id="future-label">
                 <h3>Future</h3>
-                <img id="future-card-img">
+                <img id="future-card-img" class="card-size">
             </label>
 
-            <button id="another-reading">Another Reading</button>
         </div>
 
         <p id='results-paragraph'></p>
+
+        <div id="button-container">
+            <button id="another-reading" class="btn">Another Reading</button>
+        </div>
 
     </main>
 
