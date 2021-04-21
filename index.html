@@ -6,21 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarot</title>
-    <link rel="stylesheet" href="./css/styles.css/">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
     <header>
-        Tarot Time
+        <h1>
+            Tarot Time
+        </h1>
     </header>
 
     <main>
-        Who are you?
+
         <form id="user-info-form">
-            <label>Name: <input name="name-input"></label>
-            <label> What's your birthday? <input type="date" name="birthday-input"></label>
-            <button id="destiny-button">Your destiny awaits</button>
+
+            <div id="form-container">
+                <label>Name: <input name="name-input"></label>
+                <label> Date of birth <input type="date" name="birthday-input"></label>
+            </div>
+
+            <div id="button-container">
+                <button id="destiny-button" class="btn">Your destiny awaits</button>
+            </div>
         </form>
+
+        <div id="meta">
+            <img src="../images/meta.jpg">
+        </div>
+
     </main>
 
     <footer>
