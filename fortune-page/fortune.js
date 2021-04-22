@@ -72,6 +72,8 @@ export function nineCards(shuffledDeck) {
 };
 
 function createCard() {
+  const user = getUser();
+
   const radio1 = document.querySelector('#tarot1');
   const radio2 = document.querySelector('#tarot2');
   const radio3 = document.querySelector('#tarot3');
@@ -86,34 +88,37 @@ function createCard() {
   const revealedCard1 = document.querySelector('#revealed-card-1')
 
   cardImg1.src = '../images/main-deck/card-back.png';
-  revealedCard1.src = threeCards[0].img
-  console.log(threeCards)
-
+  if (user.deck === 'classic') {
+    revealedCard1.src = threeCards[0].img;
+  } else if (user.deck === 'cat') {
+    revealedCard1.src = threeCards[0].catimg;
+  }
 
   radio1.value = threeCards[0].name;
 
-
   const cardImg2 = document.querySelector('#card2');
-  const revealedCard2 = document.querySelector('#revealed-card-2')
+  const revealedCard2 = document.querySelector('#revealed-card-2');
 
   cardImg2.src = '../images/main-deck/card-back.png';
-  revealedCard2.src = threeCards[1].img
-
+  if (user.deck === 'classic') {
+    revealedCard2.src = threeCards[1].img;
+  } else if (user.deck === 'cat') {
+    revealedCard2.src = threeCards[1].catimg;
+  };
 
   radio2.value = threeCards[1].name;
 
-
-
   const cardImg3 = document.querySelector('#card3');
-  const revealedCard3 = document.querySelector('#revealed-card-3')
+  const revealedCard3 = document.querySelector('#revealed-card-3');
 
-  cardImg3.src = '../images/main-deck/card-back.png'
-  revealedCard3.src = threeCards[2].img
-
+  cardImg3.src = '../images/main-deck/card-back.png';
+  if (user.deck === 'classic') {
+    revealedCard3.src = threeCards[2].img;
+  } else if (user.deck === 'cat') {
+    revealedCard3.src = threeCards[2].catimg;
+  };
 
   radio3.value = threeCards[2].name;
-
-
 }
 
 createCard();
