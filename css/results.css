@@ -24,6 +24,16 @@ h1 {
     
 }
 
+h3 {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 40px;
+    margin: 5px;
+    background-color: black;
+    border-radius: 25px;
+}
+
 footer {
     display: flex;
     justify-content: center;
@@ -98,4 +108,13 @@ header {
 
 .card-size {
     height: 500px;
+}
+
+#results-paragraph {
+    background-color: black;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    color: gold;
+    
 }
