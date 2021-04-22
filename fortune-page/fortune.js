@@ -133,6 +133,8 @@ pickCardButton.addEventListener('click', () => {
 
   const cardToFlip = selectedButton.parentElement.parentElement;
 
+  pickCardButton.disabled = true
+
   cardToFlip.classList.toggle('flip');
 
   setTimeout(() => {
@@ -140,6 +142,7 @@ pickCardButton.addEventListener('click', () => {
   }, 3000);
 
   setTimeout(() => {
+    pickCardButton.disabled = false
     nineCards(shuffledDeck);
     createCard();
   }, 3600)
