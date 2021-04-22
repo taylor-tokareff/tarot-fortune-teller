@@ -14,6 +14,14 @@ import { tarot } from "../data/card-meanings.js"
 
 const user = getUser()
 
+const nameHeader = document.querySelector('#name-display')
+const birthdayHeader = document.querySelector('#birthday-display')
+
+nameHeader.textContent = user.name
+birthdayHeader.textContent = user.birthday
+
+const anotherReading = document.querySelector('#another-reading')
+
 const pastReadings = user.pastReadings
 
 const divContainer = document.querySelector('#past-readings-container')
@@ -53,5 +61,10 @@ for (let item of pastReadings) {
 
 }
 
+anotherReading.addEventListener('click', () => {
+    window.location = '../fortune-page/index.html';
+});
 
-//for in loop
+
+
+
