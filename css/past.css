@@ -147,7 +147,10 @@ p {
 }
 
 img {
-    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 100px;
     height: 500px;
     width: 300px;
 }
+
