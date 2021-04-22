@@ -1,4 +1,6 @@
-import { getUser } from "../utils.js";
+import { getUser, findByName } from "../utils.js";
+
+import { tarot } from "../data/card-meanings.js"
 
 //Get User()
 //Place to put past, present and future card
@@ -17,10 +19,39 @@ const pastReadings = user.pastReadings
 const divContainer = document.querySelector('#past-readings-container')
 
 for (let item of pastReadings) {
-    const pastCard = item[0]
-    const presentCard = item[1]
-    const futureCard = item[2]
-    console.log(item, pastCard)
+    const pastCardName = item[0];
+    const presentCardName = item[1];
+    const futureCardName = item[2];
+
+    const pastCardItem = findByName(tarot, pastCardName);
+    const presentCardItem = findByName(tarot, presentCardName);
+    const futureCardItem = findByName(tarot, futureCardName);
+
+    const pastImageContainer = document.createElement('img');
+    const presentImageContainer = document.createElement('img');
+    const futureImageContainer = document.createElement('img');
+
+    if (user.deck === 'classic') {
+        pastImageContainer.src = pastCardItem.img;
+        presentImageContainer.src = presentCardItem.img;
+        futureImageContainer.src = futureCardItem.img;
+    } else if (user.deck === 'cat') {
+        pastImageContainer.src = pastCardItem.catimg;
+        presentImageContainer.src = presentCardItem.catimg;
+        futureImageContainer.src = futureCardItem.catimg;
+    }
+
+    const readingPara = document.createElement('p');
+
+    let results = 'The cards have revealed your fate, '
+
+    results += user.name + ', born on ' + user.birthday + '. ' + pastCardItem.past + ' ' + presentCardItem.present + ' ' + futureCardItem.future;
+
+    readingPara.textContent = results;
+
+    divContainer.append(pastImageContainer, presentImageContainer, futureImageContainer, readingPara);
+
 }
+
 
 //for in loop
