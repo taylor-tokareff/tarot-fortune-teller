@@ -132,6 +132,8 @@ h1 {
   
 .flip {
     transform: rotateY(180deg);
+    
+    
 }
   
 .front, .back {
@@ -144,8 +146,13 @@ h1 {
   
 .back {
     transform: rotateY(180deg);
+    transform-origin: 60px;
+    
+    
 }
 
-/* .revealed-cards {
-    display: none;
-} */
+.revealed-cards {
+    height: 500px;
+    width: 300px;
+    margin: 30px;
+}

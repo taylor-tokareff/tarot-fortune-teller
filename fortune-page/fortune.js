@@ -125,10 +125,8 @@ pickCardButton.addEventListener('click', () => {
   saveUser(user);
 
   const cardToFlip = selectedButton.parentElement.parentElement;
-  // const bob = document.querySelector('.revealed-cards')
 
   cardToFlip.classList.toggle('flip');
-  // bob.classList.toggle('revealed-cards')
 
   setTimeout(() => {
     cardToFlip.classList.toggle('flip');
