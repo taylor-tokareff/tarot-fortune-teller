@@ -8,6 +8,7 @@ userInfoForm.addEventListener('submit', (event) => {
     const userInput = new FormData(userInfoForm);
     const name = userInput.get('name-input');
     const birthDay = userInput.get('birthday-input');
+    const deck = userInput.get('deck-choice');
 
     let user = getUser();
     if (!user) {
@@ -15,7 +16,8 @@ userInfoForm.addEventListener('submit', (event) => {
             name: name,
             birthday: birthDay,
             chosenCards: [],
-            pastReadings: []
+            pastReadings: [],
+            deck: deck
         };
     }
     
