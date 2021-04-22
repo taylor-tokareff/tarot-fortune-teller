@@ -58,8 +58,9 @@ const newReadingButton = document.querySelector("#another-reading");
 
 newReadingButton.addEventListener('click', () => {
     // user.chosenCards.forEach(card => user.pastReadings.push(card));
-    user.pastReadings.push({...user.chosenCards});
+    user.pastReadings.push({ ...user.chosenCards });
     user.chosenCards = [];
     saveUser(user);
-    
+    window.location = '../fortune-page/index.html';
 });
+
