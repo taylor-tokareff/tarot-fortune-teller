@@ -19,3 +19,8 @@ export function findByName(array, name) {
     }
 }
 
+export function getDeckChoice() {
+    const selectedDeckDiv = document.getElementById('deck');
+
+}
+

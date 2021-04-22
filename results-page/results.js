@@ -32,9 +32,15 @@ const futureCardItem = findByName(tarot, user.chosenCards[2])
 nameHeader.textContent = user.name
 birthdayHeader.textContent = user.birthday
 
-pastImageContainer.src = pastCardItem.img
-presentImageContainer.src = presentCardItem.img
-futureImageContainer.src = futureCardItem.img
+if (user.deck === 'classic') {
+    pastImageContainer.src = pastCardItem.img;
+    presentImageContainer.src = presentCardItem.img;
+    futureImageContainer.src = futureCardItem.img;
+} else if (user.deck === 'cat') {
+    pastImageContainer.src = pastCardItem.catimg;
+    presentImageContainer.src = presentCardItem.catimg;
+    futureImageContainer.src = futureCardItem.catimg;
+}
 
 
 pastLabel.append(pastImageContainer)
