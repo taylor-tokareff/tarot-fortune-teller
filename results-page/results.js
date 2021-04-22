@@ -7,6 +7,7 @@ import { tarot } from '../data/card-meanings.js'
 const user = getUser()
 
 const cardsToInject = user.chosenCards
+const pastReadingButton = document.querySelector('.past-readings-button')
 
 const resultsParagraph = document.querySelector('#results-paragraph')
 const pastCardTitle = document.querySelector('#past-card-title')
@@ -64,3 +65,10 @@ newReadingButton.addEventListener('click', () => {
     window.location = '../fortune-page/index.html';
 });
 
+pastReadingButton.addEventListener('click', () => {
+    // user.chosenCards.forEach(card => user.pastReadings.push(card));
+    user.pastReadings.push({ ...user.chosenCards });
+    user.chosenCards = [];
+    saveUser(user);
+    window.location = '../past-readings/index.html';
+});
