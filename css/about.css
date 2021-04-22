@@ -16,8 +16,12 @@ html, body {
 }
 
 .portraits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 200px;
+    
 }
 
 h1 {
@@ -35,40 +39,10 @@ h2 {
     font-size: 50px;
 }
 
-#user-info-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    font-weight: bolder;
-}
-
-#form-container {
-    background-color: black;
-    border-radius: 25px;
-}
-
-input {
-    background-color: blueviolet;
-    font-family: 'Mystery Quest', cursive;
-}
 
 footer {
     display: flex;
     justify-content: center;
-}
-#meta {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-items: center;
-    margin: 10px;
-}
-
-label {
-    margin: 20px;
 }
 
 #button-container {
@@ -106,13 +80,6 @@ label {
     text-decoration: none;
   }
 
-  #display-background {
-    display: flex;
-    background-color: black;
-    border-radius: 25px;
-    color: gold;
-}
-
 header {
     display: flex;
     flex-direction: column;
@@ -120,12 +87,17 @@ header {
     align-items: center;
 }
 
-#name-display {
-    margin: 10px;
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#birthday-display {
-    margin: 10px;
+p {
+    background-color: black;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    color: gold;
+    
 }
-  
-
