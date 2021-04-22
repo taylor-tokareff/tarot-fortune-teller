@@ -5,6 +5,7 @@ import { getUser, findByName, saveUser } from '../utils.js'
 const shuffledDeck = shuffle(tarot);
 const pickCardButton = document.querySelector('#pick-card-button');
 const user = getUser()
+const pastButton = document.querySelector('.past-readings-button'); 
 
 const nameHeader = document.querySelector('#name-display')
 const birthdayHeader = document.querySelector('#birthday-display')
@@ -25,6 +26,7 @@ let cardToFlip1 = document.querySelectorAll('.inner-flip-container')[1];
 
 let cardToFlipContainer2 = document.querySelectorAll('.flip-container')[2];
 let cardToFlip2 = document.querySelectorAll('.inner-flip-container')[2];
+
 
 
 export function shuffle(array) {
@@ -144,3 +146,11 @@ pickCardButton.addEventListener('click', () => {
 
 
 })
+
+if (user.pastReadings.length >= 1){
+
+  pastButton.classList.toggle('past-readings-button');
+
+
+}
+

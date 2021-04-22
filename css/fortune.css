@@ -57,6 +57,7 @@ input[type='radio']:checked + img {
     align-items: center;
     margin-top: 150px;
     margin-bottom: 20px;
+    flex-direction: column;
 }
 
 h1 {
@@ -98,6 +99,7 @@ h1 {
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
+    margin: 5px;
   }
   
   .btn:hover {
@@ -155,4 +157,8 @@ h1 {
     height: 500px;
     width: 300px;
     margin: 30px;
+}
+
+.past-readings-button {
+    display: none;
 }
