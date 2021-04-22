@@ -147,5 +147,7 @@ p {
 }
 
 img {
-    margin: 5px
+    margin: 5px;
+    height: 500px;
+    width: 300px;
 }
