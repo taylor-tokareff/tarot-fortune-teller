@@ -114,6 +114,7 @@ h1 {
 
   .card-size {
       height: 500px;
+      box-shadow: 7px 7px 7px black;
   }
 
   .flip-container {
@@ -161,4 +162,9 @@ h1 {
 
 .past-readings-button {
     display: none;
+}
+
+
+.revealed-cards {
+    box-shadow: 7px 7px 7px black;
 }

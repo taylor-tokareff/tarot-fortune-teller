@@ -1,6 +1,6 @@
 import { getUser, saveUser } from './utils.js'
 
-const userInfoForm = document.querySelector('form')
+const userInfoForm = document.querySelector('form');
 
 userInfoForm.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -20,11 +20,9 @@ userInfoForm.addEventListener('submit', (event) => {
             deck: deck
         };
     }
-    
 
     saveUser(user);
 
     window.location = './fortune-page/index.html';
-
 });
 
