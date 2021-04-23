@@ -15,15 +15,6 @@ html, body {
     
 }
 
-h1 {
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-    font-size: 85px;
-    text-shadow: 4px 4px 4px rgb(20, 180, 47);
-    
-}
-
 h2 {
     display: flex;
     justify-content: center;
@@ -113,6 +104,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 2px;
 }
 
 #name-display {
@@ -122,6 +114,34 @@ header {
 #birthday-display {
     margin: 10px;
 }
-
-
-
+  
+  .container {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .neon {
+    color: rgb(122, 21, 122);
+    font-size: 8vw;
+    line-height: 8vw;
+    text-shadow: 0 0 3vw rgb(20, 180, 47);
+  }
+  
+  .neon {
+    animation: neon 1s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation: neon 1s ease infinite;
+  }
+  
+  @keyframes neon {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw gold, 0 0 3vw gold, 0 0 10vw gold, 0 0 10vw gold, 0 0 .4vw rgb(20, 180, 47), .5vw .5vw .1vw rgb(20, 180, 47);
+      color: rgb(153, 34, 153);
+    }
+    50% {
+      text-shadow: 0 0 .5vw goldenrod, 0 0 1.5vw goldenrod, 0 0 5vw goldenrod, 0 0 5vw goldenrod, 0 0 .2vw goldenrod, .5vw .5vw .1vw rgb(20, 180, 47);
+      color:rgb(122, 21, 122);
+    }
+  }
