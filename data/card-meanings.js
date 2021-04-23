@@ -25,11 +25,11 @@ export const tarot = [
 
         'catimg': '../images/cat-deck/1-the-magician.jpg',
 
-        'past': "Even though you have what it takes to grow spiritually, you did not do anything about it in the past.",
+        'past': "The Magician indicates that even though you have what it takes to grow spiritually, you did not do anything about it in the past.",
 
-        'present': "A recent event makes you discover your spiritual potential. This is a great time to do something that you have thought about in the past but did not take the steps to pursue. You are open and have an attentive ear to the inner voice that will guide you. It may lead you to looking for spiritual counsel, joining a group or following a spiritual guide.",
+        'present': "The Magician in the present indicates that a recent event is making you discover your spiritual potential. This is a great time to do something that you have thought about in the past but did not take the steps to pursue. You are open and have an attentive ear to the inner voice that will guide you. It may lead you to looking for spiritual counsel, joining a group or following a spiritual guide.",
 
-        'future': "If a recent event has temporarily made it difficult for you to use the spiritual resources you have at hand, you may be inclined to use dangerous occult forces in order to reach your spiritual goals. Be wary of con artists of the esoteric.",
+        'future': "You have drawn the Magician in the past position. This means that if a recent event has temporarily made it difficult for you to use the spiritual resources you have at hand, you may be inclined to use dangerous occult forces in order to reach your spiritual goals. Be wary of con artists of the esoteric.",
     },
 
     {
@@ -43,7 +43,7 @@ export const tarot = [
 
         'past': "In the past position, the High Priestess is a testament to the patience and understanding you have shown in difficult circumstances. Instinct and intuition have been guiding forces throughout your life, more often than otherwise leading you in the right direction.",
 
-        'present': "When the High Priestess is in the present position, you’re advised to never believe what’s presented as the truth. The skills you developed in the past will apply here, making it easier for you to avoid bad a situation. Is your partner insisting on you moving in together, despite your objections? Do you sense that someone walking down the street is following you too closely? Follow these hunches — you’ll be grateful that you did.",
+        'present': "When the High Priestess is in the present position, you’re advised to never believe what’s presented as the truth. The skills you developed in the past will apply here, making it easier for you to avoid a bad situation. Is your partner insisting on you moving in together, despite your objections? Do you sense that someone walking down the street is following you too closely? Follow these hunches — you’ll be grateful that you did.",
 
         'future': "In the future position, the High Priestess means that you’re headed towards a conflict that should be defused or avoided altogether. Use your foresight to guide you to the best outcome. This card is one that knows without knowing — use that ability to better your future.",
     },
@@ -56,7 +56,6 @@ export const tarot = [
         'img': '../images/main-deck/3-the-empress.jpg',
 
         'catimg': '../images/cat-deck/3-the-empress.jpg',
-
 
         'past': "In the past position, the Empress indicates that several opportunities you seized upon in the past are starting to come to fruition. These might have been romantic, business, artistic, or personal opportunities, but so long as you continue along the same path you’ve been following all this time, you can be confident even greater successes will be forthcoming.",
 
@@ -76,9 +75,9 @@ export const tarot = [
 
         'past': "In the past position, the Emperor indicates that you’ve benefited greatly from the nurturing your father or an important male teacher provided you as a child. You continue to be guided by the lessons and values this individual wisely imparted to you.",
 
-        'present': "In the present position, it means that there’s a good chance you’re about to be introduced to a celebrity or famous person who was one of your childhood heroes. At the same time, there is an individual in your life who is introducing you to a new way of being, a more positive approach that this person, likely an older, powerful male, personifies.",
+        'present': "In the present position, the Emperor means that there’s a good chance you’re about to be introduced to a celebrity or famous person who was one of your childhood heroes. At the same time, there is an individual in your life who is introducing you to a new way of being, a more positive approach that this person, likely an older, powerful male, personifies.",
 
-        'future': "In the future position the Emperor tarot card indicates that you are developing a new, more conservative mindset that will eventually have an impact on your political leanings, which in turn could negatively affect several of your personal relationships. A powerful male figure will be the impetus behind your apparent political awakening. However, this person is not to be trusted and will prove to be a negative force whose teachings only bring you, along with the people who love you, harm.",
+        'future': "In the future position, the Emperor tarot card indicates that you are developing a new, more conservative mindset that will eventually have an impact on your political leanings, which in turn could negatively affect several of your personal relationships. A powerful male figure will be the impetus behind your apparent political awakening. However, this person is not to be trusted and will prove to be a negative force whose teachings only bring you, along with the people who love you, harm.",
     },
 
     {
@@ -92,7 +91,7 @@ export const tarot = [
 
         'past': "In the past position, the Hierophant indicates that you’ve benefited more than you realize from your past ambitions, whether they were realized at the time or not. Determine where this strength within you lies, and apply it to your benefit under your present circumstances.",
 
-        'present': "As an indicator of your present situation, the Hierophant represents a new way of living and belief system that could be taking a hold and motivating you in a positive manner. However, you need to move slowly and carefully, don’t dive into any new venture without first giving it your full consideration.",
+        'present': "As an indicator of your present situation, the Hierophant represents a new way of living and belief system that could be taking a hold and motivating you in a positive manner. However, you need to move slowly and carefully, and don’t dive into any new venture without first giving it your full consideration.",
 
         'future': "In the future position, the Hierophant is suggesting that you don’t need to do anything special to plan for your future right now. Everything is as it should be and will organically unfold in a positive fashion.",
     },
@@ -140,7 +139,7 @@ export const tarot = [
 
         'past': "The past position for Strength is a particularly interesting state. This often refers to your composure in the face of adversity leading to your current success. In some cases, Strength in the past position refers to your ability to consistently seek new challenges, never settling into a single position for too long. Essentially, Strength in the past signifies transition and victory through your iron will to hold it all together.",
 
-        'present': "In the present position, the Strength card is a challenge to take on more. Do not turn down opportunities simply because they are risky or difficult. The odds are in your favor, and now is the time invest yourself in uncertain ventures that you are passionate about.",
+        'present': "In the present position, the Strength card is a challenge to take on more. Do not turn down opportunities simply because they are risky or difficult. The odds are in your favor, and now is the time to invest yourself in uncertain ventures that you are passionate about.",
 
         'future': "In the future position, Strength is an encouragement, promising that your current troubles will soon be under control, and might even contribute to your success.",
     },
@@ -202,9 +201,9 @@ export const tarot = [
 
         'catimg': '../images/cat-deck/12-the-hanged-man.jpg',
 
-        'past': "Drawing the Hanged Man in the present position suggests you are unhappy with your current situation, and that you feel trapped in your immediate circumstances or frame of mind. The good news is that you have the power within to escape your unhappy situation. You just need to step back a little, relax, stop trying to control everything all the time and do your best to look at your dilemma from a different perspective. The way forward will make itself apparent in due time.",
+        'past': "In the past position, the Hanged Man card indicates that you’ve finally managed to let go of the lingering negative memories you’ve been harboring all these years, and that this has proven beneficial to you spiritually. You can now safely look back at these experiences from a fresh perspective.",
 
-        'present': "In the past position, the Hanged Man card indicates that you’ve finally managed to let go of the lingering negative memories you’ve been harboring all these years, and that this has proven beneficial to you spiritually. You can now safely look back at these experiences from a fresh perspective.",
+        'present': "Drawing the Hanged Man in the present position suggests you are unhappy with your current situation, and that you feel trapped in your immediate circumstances or frame of mind. The good news is that you have the power within to escape your unhappy situation. You just need to step back a little, relax, stop trying to control everything all the time and do your best to look at your dilemma from a different perspective. The way forward will make itself apparent in due time.",
 
         'future': "In the future position, the Hanged Man tells you that things remain uncertain, so be sure to plan your next moves carefully.  If you’ve been hurried and rushing lately, you should relax and give pause to the situations around you.",
     },
@@ -220,7 +219,7 @@ export const tarot = [
 
         'past': "Death in the past position indicates you have moved into a new phase of life, that you are at the end of one cycle and arrived at a time of new beginnings.",
 
-        'present': "In the present position, it means that something big is literally in the cards for you and it will arrive with little to no advance warning. This is likely to be a positive change, although you may lose something that’s been important to you in the process.",
+        'present': "In the present position, Death means that something big is literally in the cards for you and it will arrive with little to no advance warning. This is likely to be a positive change, although you may lose something that’s been important to you in the process.",
 
         'future': "Death in the future position is a sign that you need to find a new perspective on the world in order to move forward. Put the past behind you, your journey is just beginning.",
     },
@@ -268,7 +267,7 @@ export const tarot = [
 
         'past': "In the past position, the Tower indicates that you have experienced a traumatic event which continues to negatively affect you. It could be in the recent or distant past — either way, you must learn to move forward and leave it behind you, where it belongs.",
 
-        'present': "In the present position, it represents a longstanding conflict that’s about to come to its conclusion. It could be of a romantic nature, and if so, you need to step back and reevaluate the relationship in order to proceed in the right direction.",
+        'present': "In the present position, the Tower represents a longstanding conflict that’s about to come to its conclusion. It could be of a romantic nature, and if so, you need to step back and reevaluate the relationship in order to proceed in the right direction.",
 
         'future': "The Tower indicates that the worst is behind you, but you still have a series of major challenges coming your way. So long as you take on and survive these challenges gracefully, your immediate future promises to be bright.",
     },
@@ -300,9 +299,9 @@ export const tarot = [
 
         'past': "In the past position, the Moon indicates that you do not clearly understand the forces that have been at work in your life up until this point. Take a step back and reanalyze your past successes and defeats. Perhaps you had more of a helping hand from those around you than you realize. Self-aggrandizing stories of past accomplishments may in fact be doing you more harm than good.",
 
-        'present': "The Moon is a clear sign of change. You are or will be uncertain about how to proceed, but this situation will be less foreign to you than it may seem. Look to the past for guidance — you already have the experience you need to overcome this challenge if you are able to recognize it for what it is.",
+        'present': "In the present, the Moon is a clear sign of change. You are uncertain about how to proceed, but this situation is less foreign to you than it may seem. Look to the past for guidance — you already have the experience you need to overcome this challenge if you are able to recognize it for what it is.",
 
-        'future': "The Moon is a clear sign of change. You are or will be uncertain about how to proceed, but this situation will be less foreign to you than it may seem. Look to the past for guidance — you already have the experience you need to overcome this challenge if you are able to recognize it for what it is.",
+        'future': "The Moon is a clear sign of change in the future. You will be uncertain about how to proceed, but this situation will be less foreign to you than it may seem. Look to the past for guidance — you already have the experience you need to overcome this challenge if you are able to recognize it for what it is.",
     },
 
     {
@@ -316,9 +315,9 @@ export const tarot = [
 
         'past': "The Sun is a welcome card in any position. In the past position, it indicates that you likely had a sunny, positive upbringing. Look back on your childhood and show appreciation for the people you no longer spend time with. You may feel the desire to contact those you miss, or those who helped make your childhood so memorable.",
 
-        'present': "The Sun in the present position means that you’re the center of attention, either at work or within your social entourage. All eyes are on you, so try to keep your feet on the ground — enjoy the attention, but remain modest and kind.",
+        'present': "The Sun is a welcome card in any position. The Sun in the present position means that you’re the center of attention, either at work or within your social entourage. All eyes are on you, so try to keep your feet on the ground — enjoy the attention, but remain modest and kind.",
 
-        'future': "The Sun in the future position suggests that your current efforts will likely be fruitful, so don’t give up on them. You may notice certain situations turning out even better than you originally expected.",
+        'future': "The Sun is a welcome card in any position. The Sun in the future position suggests that your current efforts will likely be fruitful, so don’t give up on them. You may notice certain situations turning out even better than you originally expected.",
     },
 
     {
@@ -330,7 +329,7 @@ export const tarot = [
 
         'catimg': '../images/cat-deck/20-judgement.jpg',
 
-        'past': "In a past position, Judgement indicates that your current life is the end result of a single major decision that you made in the past. Day to day living obliges all of us to make decisions both large and small, but you made one decision that left an indelible mark on your life, for better or worse. Perhaps you chose to move away from home in college or drop out of school. Maybe you got caught stealing, or found the love of your life on a blind date. It can be hard to think of your life unfolding any other way than it has, but if you had made this one choice differently, your own life would be unrecognizable to you.",
+        'past': "In the past position, Judgement indicates that your current life is the end result of a single major decision that you made in the past. Day to day living obliges all of us to make decisions both large and small, but you made one decision that left an indelible mark on your life, for better or worse. Perhaps you chose to move away from home in college or drop out of school. Maybe you got caught stealing, or found the love of your life on a blind date. It can be hard to think of your life unfolding any other way than it has, but if you had made this one choice differently, your own life would be unrecognizable to you.",
 
         'present': "In your present situation, Judgement indicates that you are thinking about an important decision. While the Judgement card does not necessarily offer guidance on which choice is correct, it does emphasize that the decision you are reflecting on is in fact life altering. That said, Judgement tends to favor change, meaning the right decision tends to be the one that takes you most out of your comfort zone.",
 
