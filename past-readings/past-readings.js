@@ -1,6 +1,6 @@
-import { getUser, findByName } from "../utils.js";
+import { getUser, findByName } from '../utils.js';
 
-import { tarot } from "../data/card-meanings.js"
+import { tarot } from '../data/card-meanings.js';
 
 //Get User()
 //Place to put past, present and future card
@@ -10,27 +10,23 @@ import { tarot } from "../data/card-meanings.js"
 //grab each key/value pair
 //Use keyvalue pairs to display images and paragraph
 
+const user = getUser();
 
+const nameHeader = document.querySelector('#name-display');
+const birthdayHeader = document.querySelector('#birthday-display');
 
-const user = getUser()
+nameHeader.textContent = user.name;
+birthdayHeader.textContent = user.birthday;
 
-const nameHeader = document.querySelector('#name-display')
-const birthdayHeader = document.querySelector('#birthday-display')
+const anotherReading = document.querySelector('#another-reading');
 
-nameHeader.textContent = user.name
-birthdayHeader.textContent = user.birthday
+const pastReadings = user.pastReadings;
 
-const anotherReading = document.querySelector('#another-reading')
-
-const pastReadings = user.pastReadings
-
-const divContainer = document.querySelector('#past-readings-container')
+const divContainer = document.querySelector('#past-readings-container');
 
 for (let item of pastReadings) {
-    const pastCardName = item[0];
-    const presentCardName = item[1];
-    const futureCardName = item[2];
-
+    // you could destructure here if you wanna feel fancy
+    const [pastCardName, presentCardName, futureCardName] = item;
     const pastCardItem = findByName(tarot, pastCardName);
     const presentCardItem = findByName(tarot, presentCardName);
     const futureCardItem = findByName(tarot, futureCardName);
@@ -39,20 +35,18 @@ for (let item of pastReadings) {
     const presentImageContainer = document.createElement('img');
     const futureImageContainer = document.createElement('img');
 
-    if (user.deck === 'classic') {
-        pastImageContainer.src = pastCardItem.img;
-        presentImageContainer.src = presentCardItem.img;
-        futureImageContainer.src = futureCardItem.img;
-    } else if (user.deck === 'cat') {
-        pastImageContainer.src = pastCardItem.catimg;
-        presentImageContainer.src = presentCardItem.catimg;
-        futureImageContainer.src = futureCardItem.catimg;
-    }
+    const imgProp = user.deck === 'classic' ? 'img' : 'catimg';
+
+    pastImageContainer.src = pastCardItem[imgProp];
+    presentImageContainer.src = presentCardItem[imgProp];
+    futureImageContainer.src = futureCardItem[imgProp];
 
     const readingPara = document.createElement('p');
 
-    let results = 'The cards have revealed your fate, '
+    // lots of code duplication between this file and results.js. You should abstract the repeated work into a function that you call in bother places
+    let results = 'The cards have revealed your fate, ';
 
+    // would like to see `some ${string templates}` here instead of + concatination
     results += user.name + ', born on ' + user.birthday + '. ' + pastCardItem.past + ' ' + presentCardItem.present + ' ' + futureCardItem.future;
 
     readingPara.textContent = results;

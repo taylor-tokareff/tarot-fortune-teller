@@ -1,4 +1,4 @@
-import { getUser, saveUser } from './utils.js'
+import { getUser, saveUser } from './utils.js';
 
 const userInfoForm = document.querySelector('form');
 
@@ -10,16 +10,14 @@ userInfoForm.addEventListener('submit', (event) => {
     const birthDay = userInput.get('birthday-input');
     const deck = userInput.get('deck-choice');
 
-    let user = getUser();
-    if (!user) {
-        user = {
-            name: name,
-            birthday: birthDay,
-            chosenCards: [],
-            pastReadings: [],
-            deck: deck
-        };
-    }
+    // this fallback should work
+    const user = getUser() || {
+        name: name,
+        birthday: birthDay,
+        chosenCards: [],
+        pastReadings: [],
+        deck: deck
+    };
 
     saveUser(user);
 

@@ -6,7 +6,7 @@ export function saveUser(user) {
 
 export function getUser() {
     const getUserData = localStorage.getItem('user');
-    if (!getUserData) return null;
+    if (!getUserData) return null; // null is dangerous to return here. what if something tries to grab a property off of null somewhere?
     const user = JSON.parse(getUserData);
     return user;
 }
@@ -18,8 +18,3 @@ export function findByName(array, name) {
         }
     }
 }
-
-export function getDeckChoice() {
-    const selectedDeckDiv = document.getElementById('deck');
-}
-
