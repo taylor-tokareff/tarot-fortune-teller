@@ -6,13 +6,9 @@ import { tarot } from '../data/card-meanings.js'
 
 const user = getUser()
 
-const cardsToInject = user.chosenCards
 const pastReadingButton = document.querySelector('.past-readings-button')
 
 const resultsParagraph = document.querySelector('#results-paragraph')
-const pastCardTitle = document.querySelector('#past-card-title')
-const presentCardTitle = document.querySelector('#present-card-title')
-const futureCardTitle = document.querySelector('#future-card-title')
 
 const nameHeader = document.querySelector('#name-display')
 const birthdayHeader = document.querySelector('#birthday-display')
@@ -33,16 +29,11 @@ const futureCardItem = findByName(tarot, user.chosenCards[2])
 nameHeader.textContent = user.name
 birthdayHeader.textContent = user.birthday
 
-if (user.deck === 'classic') {
-    pastImageContainer.src = pastCardItem.img;
-    presentImageContainer.src = presentCardItem.img;
-    futureImageContainer.src = futureCardItem.img;
-} else if (user.deck === 'cat') {
-    pastImageContainer.src = pastCardItem.catimg;
-    presentImageContainer.src = presentCardItem.catimg;
-    futureImageContainer.src = futureCardItem.catimg;
-}
+const imgProp = user.deck === 'classic' ? 'img' : 'catimg';
 
+pastImageContainer.src = pastCardItem[imgProp];
+presentImageContainer.src = presentCardItem[imgProp];
+futureImageContainer.src = futureCardItem[imgProp];
 
 pastLabel.append(pastImageContainer)
 presentLabel.append(presentImageContainer)
